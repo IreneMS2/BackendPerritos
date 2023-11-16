@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elasticsearch Frontend</title>
+</head>
+<body>
+<label for="searchInput"></label><input type="text" id="searchInput" placeholder="Search...">
+<button onclick="search()">Search</button>
+<div id="results"></div>
+<script>
+    async function search() {
+        const query = document.getElementById('searchInput').value;
+        //const response = await fetch(`http://localhost:63342/search?query=${query}`);
+        const response = await fetch(`http://localhost:3000/search?query=${query}`);
+        const data = await response.json();
+        const results = document.getElementById('results');
+        results.innerHTML = JSON.stringify(data, null, 2);
+    }
+</script>
+</body>
+</html>
