@@ -1,4 +1,4 @@
-#CONEXIÓN BACKEND + QUERYS
+# CONEXIÓN BACKEND + QUERYS
 Para ejecutar back, en un entorno que no te deje el play:
 node server.js
 
