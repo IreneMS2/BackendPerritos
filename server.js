@@ -74,12 +74,12 @@ app.get('/api/search', async (req, res) => {
         }
 
         const body = await client.search({
-            index: 'fruits',
-            q: `name:${query} OR price:${parseFloat(query)}`, // Use the q parameter for a simple query string
+            index: ['fruits', 'animals'],
+            q: `name:${query} OR price:${parseFloat(query)}`,
         });
 
         console.log('Elasticsearch Query:', {
-            index: 'fruits',
+            index: ['fruits', 'animals'],
             body: {
                 query: {
                     match: {
@@ -92,13 +92,33 @@ app.get('/api/search', async (req, res) => {
 
         if (body && body.hits) {
             // Extract relevant fields from the Elasticsearch response
-            const results = body.hits.hits.map(hit => ({
-                name: hit._source.name,
-                description: hit._source.description,
-                price: hit._source.price,
-            }));
+            const results = body.hits.hits.map(hit => {
+                let extractedFields = {};
 
-            res.json(results);
+                if (hit._index === 'fruits') {
+                    extractedFields = {
+                        name: hit._source.name,
+                        description: hit._source.description,
+                        price: hit._source.price,
+                    };
+                } else if (hit._index === 'animals') {
+                    extractedFields = {
+                        name: hit._source.name,
+                        raza: hit._source.raza,
+                        descripcion: hit._source.descripcion,
+                        color: hit._source.color,
+                        patologias: hit._source.patologias,
+                        pelaje: hit._source.pelaje,
+                    };
+                }
+
+                return extractedFields;
+            });
+
+            // Filtra y elimina los resultados vacíos
+            const filteredResults = results.filter(result => Object.keys(result).length !== 0);
+
+            res.json(filteredResults); // Devuelve los resultados filtrados
         } else {
             res.status(404).json({ error: 'No results found' });
         }
