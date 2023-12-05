@@ -75,7 +75,7 @@ app.get('/api/search', async (req, res) => {
 
         const body = await client.search({
             index: ['fruits', 'animals'],
-            q: `name:${query} OR price:${parseFloat(query)}`,
+            q: `name:${query} OR price:${parseFloat(query)} OR raza:${query} OR pelaje:${query} OR patologias:${query} OR descripcion:${query} OR color:${query}`,
         });
 
         console.log('Elasticsearch Query:', {
@@ -101,7 +101,8 @@ app.get('/api/search', async (req, res) => {
                         description: hit._source.description,
                         price: hit._source.price,
                     };
-                } else if (hit._index === 'animals') {
+                }
+                if (hit._index === 'animals') {
                     extractedFields = {
                         name: hit._source.name,
                         raza: hit._source.raza,
