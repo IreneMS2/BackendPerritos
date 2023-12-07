@@ -64,34 +64,31 @@ app.get('/check', async (req, res) => {
 });
 
 app.get('/api/search', async (req, res) => {
-    const query = req.query.query; // Extract the 'query' parameter directly
-    console.log(query);
+    const queryTerms = req.query.query.split(" ");
+
     try {
-        if (!query) {
-            // Handle empty query
+        if (!queryTerms || queryTerms.length === 0) {
             res.status(400).json({ error: 'Query parameter is missing' });
             return;
         }
 
         const body = await client.search({
-            index: ['fruits', 'animals'],
-            q: `name:${query} OR price:${parseFloat(query)} OR raza:${query} OR pelaje:${query} OR patologias:${query} OR descripcion:${query} OR color:${query}`,
-        });
-
-        console.log('Elasticsearch Query:', {
-            index: ['fruits', 'animals'],
+            index: ['fruits', 'bdanimals'],
             body: {
                 query: {
-                    match: {
-                        name: query,
-                    },
-                },
-            },
+                    bool: {
+                        must: queryTerms.map(term => ({
+                            multi_match: {
+                                query: term,
+                                fields: ['name', 'price', 'raza', 'pelaje', 'patologias', 'descripcion', 'color', 'tipus'],
+                            }
+                        }))
+                    }
+                }
+            }
         });
-        console.log(JSON.stringify(body, null, 2));
 
         if (body && body.hits) {
-            // Extract relevant fields from the Elasticsearch response
             const results = body.hits.hits.map(hit => {
                 let extractedFields = {};
 
@@ -102,7 +99,7 @@ app.get('/api/search', async (req, res) => {
                         price: hit._source.price,
                     };
                 }
-                if (hit._index === 'animals') {
+                if (hit._index === 'bdanimals') {
                     extractedFields = {
                         name: hit._source.name,
                         raza: hit._source.raza,
@@ -110,16 +107,17 @@ app.get('/api/search', async (req, res) => {
                         color: hit._source.color,
                         patologias: hit._source.patologias,
                         pelaje: hit._source.pelaje,
+                        tamany: hit._source.tamany,
+                        edat: hit._source.edat,
+                        tipus: hit._source.tipus,
                     };
                 }
 
                 return extractedFields;
             });
 
-            // Filtra y elimina los resultados vacíos
             const filteredResults = results.filter(result => Object.keys(result).length !== 0);
-
-            res.json(filteredResults); // Devuelve los resultados filtrados
+            res.json(filteredResults);
         } else {
             res.status(404).json({ error: 'No results found' });
         }
@@ -128,6 +126,9 @@ app.get('/api/search', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
+
+
+
 
 app.use(cors());
 
