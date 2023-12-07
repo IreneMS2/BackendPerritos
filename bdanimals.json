@@ -5,11 +5,11 @@
 { "index" : { "_index" : "bdanimals", "_id" : "3" } }
 { "name": "Max", "raza": "Labrador", "descripcion": "Gos energic", "color": "Gris", "patologias": "Ceguera", "pelaje": "Mitja", "tamany": "Gran", "edat": "+8", "tipus": "Gos" }
 { "index" : { "_index" : "bdanimals", "_id" : "4" } }
-{ "name": "Daisy", "raza": "Golden", "descripcion": "Perrita cariñosa", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Llarg", "tamany": "Mitja", "edat": "0-2", "tipus": "Gos" }
+{ "name": "Daisy", "raza": "Golden", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Llarg", "tamany": "Mitja", "edat": "0-2", "tipus": "Gos" }
 { "index" : { "_index" : "bdanimals", "_id" : "5" } }
-{ "name": "Rocky", "raza": "Pug", "descripcion": "Perrito trapella", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Gos" }
+{ "name": "Rocky", "raza": "Pug", "descripcion": "Gos trapella", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Gos" }
 { "index" : { "_index" : "bdanimals", "_id" : "6" } }
-{ "name": "Buddy", "raza": "Beagle", "descripcion": "Perrito juganer", "color": "Gris", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "2-5", "tipus": "Gos" }
+{ "name": "Buddy", "raza": "Beagle", "descripcion": "Gisa juganer", "color": "Gris", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "2-5", "tipus": "Gos" }
 { "index" : { "_index" : "bdanimals", "_id" : "7" } }
 { "name": "Rex", "raza": "Labrador", "descripcion": "Gos fidel", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Mitja", "tamany": "Mitja", "edat": "5-8", "tipus": "Gos" }
 { "index" : { "_index" : "bdanimals", "_id" : "8" } }
