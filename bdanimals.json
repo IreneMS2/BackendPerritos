@@ -69,4 +69,4 @@
 { "index" : { "_index" : "bdanimals", "_id" : "35" } }
 { "name": "Carl", "raza": "Belier", "descripcion": "Conill curiós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Petit", "edat": "2-5", "tipus": "Conill", "imatge": "conill7" }
 { "index" : { "_index" : "bdanimals", "_id" : "36" } }
-{ "name": "Arlett", "raza": "Papallona", "descripcion": "Conill juganer", "color": "Ros", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Conill", "imatge": "conill8" }
+{ "name": "Arlett", "raza": "Papallona", "descripcion": "Conill juganer", "color": "Blanc", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Conill", "imatge": "conill8" }
