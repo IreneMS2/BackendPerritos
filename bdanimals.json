@@ -1,72 +1,72 @@
 { "index" : { "_index" : "bdanimals", "_id" : "1" } }
-{ "name": "Tobi", "raza": "Beagle", "descripcion": "Gos trist", "color": "Ros", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gos" }
+{ "name": "Tobi", "raza": "Beagle", "descripcion": "Gos trist", "color": "Ros", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gos", "imatge": "gos1" }
 { "index" : { "_index" : "bdanimals", "_id" : "2" } }
-{ "name": "Lola", "raza": "Bulldog", "descripcion": "Gosa alegre", "color": "Negre", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Mitja", "edat": "2-5", "tipus": "Gos" }
+{ "name": "Lola", "raza": "Bulldog", "descripcion": "Gosa alegre", "color": "Negre", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Mitja", "edat": "2-5", "tipus": "Gos", "imatge": "gos2" }
 { "index" : { "_index" : "bdanimals", "_id" : "3" } }
-{ "name": "Max", "raza": "Labrador", "descripcion": "Gos energic", "color": "Gris", "patologias": "Ceguera", "pelaje": "Mitja", "tamany": "Gran", "edat": "+8", "tipus": "Gos" }
+{ "name": "Max", "raza": "Labrador", "descripcion": "Gos energic", "color": "Gris", "patologias": "Ceguera", "pelaje": "Mitja", "tamany": "Gran", "edat": "+8", "tipus": "Gos", "imatge": "gos3" }
 { "index" : { "_index" : "bdanimals", "_id" : "4" } }
-{ "name": "Daisy", "raza": "Golden", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Llarg", "tamany": "Mitja", "edat": "0-2", "tipus": "Gos" }
+{ "name": "Daisy", "raza": "Golden", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Llarg", "tamany": "Mitja", "edat": "0-2", "tipus": "Gos", "imatge": "gos4" }
 { "index" : { "_index" : "bdanimals", "_id" : "5" } }
-{ "name": "Rocky", "raza": "Pug", "descripcion": "Gos trapella", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Gos" }
+{ "name": "Rocky", "raza": "Pug", "descripcion": "Gos trapella", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Gos", "imatge": "gos5" }
 { "index" : { "_index" : "bdanimals", "_id" : "6" } }
-{ "name": "Buddy", "raza": "Beagle", "descripcion": "Gisa juganer", "color": "Gris", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "2-5", "tipus": "Gos" }
+{ "name": "Buddy", "raza": "Beagle", "descripcion": "Gisa juganer", "color": "Gris", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "2-5", "tipus": "Gos", "imatge": "gos6" }
 { "index" : { "_index" : "bdanimals", "_id" : "7" } }
-{ "name": "Rex", "raza": "Labrador", "descripcion": "Gos fidel", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Mitja", "tamany": "Mitja", "edat": "5-8", "tipus": "Gos" }
+{ "name": "Rex", "raza": "Labrador", "descripcion": "Gos fidel", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Mitja", "tamany": "Mitja", "edat": "5-8", "tipus": "Gos", "imatge": "gos7" }
 { "index" : { "_index" : "bdanimals", "_id" : "8" } }
-{ "name": "Lucky", "raza": "Golden", "descripcion": "Gos juganer", "color": "Negre", "patologias": "Cap", "pelaje": "Mitja", "tamany": "Petit", "edat": "2-5", "tipus": "Gos" }
+{ "name": "Lucky", "raza": "Golden", "descripcion": "Gos juganer", "color": "Negre", "patologias": "Cap", "pelaje": "Mitja", "tamany": "Petit", "edat": "2-5", "tipus": "Gos", "imatge": "gos8" }
 { "index" : { "_index" : "bdanimals", "_id" : "9" } }
-{ "name": "Bella", "raza": "Pug", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "0-2", "tipus": "Gos" }
+{ "name": "Bella", "raza": "Pug", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "0-2", "tipus": "Gos", "imatge": "gos9" }
 { "index" : { "_index" : "bdanimals", "_id" : "10" } }
-{ "name": "Charlie", "raza": "Beagle", "descripcion": "Gos curios", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Llarg", "tamany": "Mitja", "edat": "+8", "tipus": "Gos" }
+{ "name": "Charlie", "raza": "Beagle", "descripcion": "Gos curios", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Llarg", "tamany": "Mitja", "edat": "+8", "tipus": "Gos", "imatge": "gos10" }
 { "index" : { "_index" : "bdanimals", "_id" : "11" } }
-{ "name": "Mina", "raza": "Siberia", "descripcion": "Gat trist", "color": "Negre", "patologias": "Artritis", "pelaje":"Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Gat" }
+{ "name": "Mina", "raza": "Siberia", "descripcion": "Gat trist", "color": "Negre", "patologias": "Artritis", "pelaje":"Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Gat", "imatge": "gat1" }
 { "index" : { "_index" : "bdanimals", "_id" : "12" } }
-{ "name": "Branca", "raza": "Somali", "descripcion": "Gat tranquil", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Gran", "edat": "5-8", "tipus": "Gat" }
+{ "name": "Branca", "raza": "Somali", "descripcion": "Gat tranquil", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Gran", "edat": "5-8", "tipus": "Gat", "imatge": "gat2" }
 { "index" : { "_index" : "bdanimals", "_id" : "13" } }
-{ "name": "Griseta", "raza": "Esfinx", "descripcion": "Gat juganer", "color": "Gris", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gat" }
+{ "name": "Griseta", "raza": "Esfinx", "descripcion": "Gat juganer", "color": "Gris", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gat", "imatge": "gat3" }
 { "index" : { "_index" : "bdanimals", "_id" : "14" } }
-{ "name": "Neula", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat" }
+{ "name": "Neula", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat", "imatge": "gat4" }
 { "index" : { "_index" : "bdanimals", "_id" : "15" } }
-{ "name": "Michi", "raza": "Persa", "descripcion": "Gat afectuós", "color": "Ros", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Gran", "edat": "2-5", "tipus": "Gat" }
+{ "name": "Michi", "raza": "Persa", "descripcion": "Gat afectuós", "color": "Ros", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Gran", "edat": "2-5", "tipus": "Gat", "imatge": "gat5" }
 { "index" : { "_index" : "bdanimals", "_id" : "16" } }
-{ "name": "Lluna", "raza": "Persa", "descripcion": "Gat trist", "color": "Gris", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gat" }
+{ "name": "Lluna", "raza": "Persa", "descripcion": "Gat trist", "color": "Gris", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gat", "imatge": "gat6" }
 { "index" : { "_index" : "bdanimals", "_id" : "17" } }
-{ "name": "Neu", "raza": "Siberia", "descripcion": "Gat relaxat", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Mitjà", "edat": "5-8", "tipus": "Gat" }
+{ "name": "Neu", "raza": "Siberia", "descripcion": "Gat relaxat", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Mitjà", "edat": "5-8", "tipus": "Gat", "imatge": "gat7" }
 { "index" : { "_index" : "bdanimals", "_id" : "18" } }
-{ "name": "Tarantin", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat" }
+{ "name": "Tarantin", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat", "imatge": "gat8" }
 { "index" : { "_index" : "bdanimals", "_id" : "19" } }
-{ "name": "Llorinet", "raza": "Gorrio", "descripcion": "Ocell curiós", "color": "Gris", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitja", "edat": "0-2", "tipus": "Ocell" }
+{ "name": "Llorinet", "raza": "Gorrio", "descripcion": "Ocell curiós", "color": "Gris", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitja", "edat": "0-2", "tipus": "Ocell", "imatge": "ocell1" }
 { "index" : { "_index" : "bdanimals", "_id" : "20" } }
-{ "name": "Canarin", "raza": "Tuca", "descripcion": "Ocell juganer", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Ocell" }
+{ "name": "Canarin", "raza": "Tuca", "descripcion": "Ocell juganer", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Ocell", "imatge": "ocell2" }
 { "index" : { "_index" : "bdanimals", "_id" : "21" } }
-{ "name": "Gorriona", "raza": "Gorrio", "descripcion": "Ocell afectuós", "color": "Ros", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Ocell" }
+{ "name": "Gorriona", "raza": "Gorrio", "descripcion": "Ocell afectuós", "color": "Ros", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Ocell", "imatge": "ocell3" }
 { "index" : { "_index" : "bdanimals", "_id" : "22" } }
-{ "name": "Amina", "raza": "Anec", "descripcion": "Ocell tranquil", "color": "Blanc", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Gran", "edat": "2-5", "tipus": "Ocell" }
+{ "name": "Amina", "raza": "Anec", "descripcion": "Ocell tranquil", "color": "Blanc", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Gran", "edat": "2-5", "tipus": "Ocell", "imatge": "ocell4" }
 { "index" : { "_index" : "bdanimals", "_id" : "23" } }
-{ "name": "Piolin", "raza": "Gorrio", "descripcion": "Ocell curiós", "color": "Negre", "patologias": "Cap", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Ocell" }
+{ "name": "Piolin", "raza": "Gorrio", "descripcion": "Ocell curiós", "color": "Negre", "patologias": "Cap", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Ocell", "imatge": "ocell5" }
 { "index" : { "_index" : "bdanimals", "_id" : "24" } }
-{ "name": "Adam", "raza": "Anec", "descripcion": "Ocell curiós", "color": "Blanc", "patologias": "Cap", "pelaje": "Curt", "tamany": "Gran", "edat": "0-2", "tipus": "Ocell" }
+{ "name": "Adam", "raza": "Anec", "descripcion": "Ocell curiós", "color": "Blanc", "patologias": "Cap", "pelaje": "Curt", "tamany": "Gran", "edat": "0-2", "tipus": "Ocell", "imatge": "ocell6" }
 { "index" : { "_index" : "bdanimals", "_id" : "25" } }
-{ "name": "Galvin", "raza": "Gorrio", "descripcion": "Ocell tranquil", "color": "Negre", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Ocell" }
+{ "name": "Galvin", "raza": "Gorrio", "descripcion": "Ocell tranquil", "color": "Negre", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Ocell", "imatge": "ocell7" }
 { "index" : { "_index" : "bdanimals", "_id" : "26" } }
-{ "name": "Sambi", "raza": "Tuca", "descripcion": "Ocell afectuós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Ocell" }
+{ "name": "Sambi", "raza": "Tuca", "descripcion": "Ocell afectuós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Ocell", "imatge": "ocell8" }
 { "index" : { "_index" : "bdanimals", "_id" : "27" } }
-{ "name": "Gorret", "raza": "Gorrio", "descripcion": "Ocell juganer", "color": "Vermell", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Ocell" }
+{ "name": "Gorret", "raza": "Gorrio", "descripcion": "Ocell juganer", "color": "Vermell", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Ocell", "imatge": "ocell9" }
 { "index" : { "_index" : "bdanimals", "_id" : "28" } }
-{ "name": "Comandante", "raza": "Gorrio", "descripcion": "Ocell juganer", "color": "Negre", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Ocell" }
+{ "name": "Comandante", "raza": "Gorrio", "descripcion": "Ocell juganer", "color": "Negre", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Ocell", "imatge": "ocell10" }
 { "index" : { "_index" : "bdanimals", "_id" : "29" } }
-{ "name": "Tonet", "raza": "Tan", "descripcion": "Conill tranquil", "color": "Blanc", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Gran", "edat": "5-8", "tipus": "Conill" }
+{ "name": "Tonet", "raza": "Tan", "descripcion": "Conill tranquil", "color": "Blanc", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Gran", "edat": "5-8", "tipus": "Conill", "imatge": "conill1" }
 { "index" : { "_index" : "bdanimals", "_id" : "30" } }
-{ "name": "Bel", "raza": "Belier", "descripcion": "Conill curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Conill" }
+{ "name": "Bel", "raza": "Belier", "descripcion": "Conill curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Conill", "imatge": "conill2" }
 { "index" : { "_index" : "bdanimals", "_id" : "31" } }
-{ "name": "Nuiret", "raza": "Tan", "descripcion": "Conill juganer", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Conill" }
+{ "name": "Nuiret", "raza": "Tan", "descripcion": "Conill juganer", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Conill", "imatge": "conill3" }
 { "index" : { "_index" : "bdanimals", "_id" : "32" } }
-{ "name": "Rexy", "raza": "Rex", "descripcion": "Conill curiós", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Gran", "edat": "+8", "tipus": "Conill" }
+{ "name": "Rexy", "raza": "Rex", "descripcion": "Conill curiós", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Gran", "edat": "+8", "tipus": "Conill", "imatge": "conill4" }
 { "index" : { "_index" : "bdanimals", "_id" : "33" } }
-{ "name": "Leo", "raza": "Papallona", "descripcion": "Conill actiu", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Mitjà", "edat": "5-8", "tipus": "Conill" }
+{ "name": "Leo", "raza": "Papallona", "descripcion": "Conill actiu", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Mitjà", "edat": "5-8", "tipus": "Conill", "imatge": "conill5" }
 { "index" : { "_index" : "bdanimals", "_id" : "34" } }
-{ "name": "Robin", "raza": "Tan", "descripcion": "Conill amistós", "color": "Negre", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Conill" }
+{ "name": "Robin", "raza": "Tan", "descripcion": "Conill amistós", "color": "Negre", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Conill", "imatge": "conill6" }
 { "index" : { "_index" : "bdanimals", "_id" : "35" } }
-{ "name": "Carl", "raza": "Belier", "descripcion": "Conill curiós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Petit", "edat": "2-5", "tipus": "Conill" }
+{ "name": "Carl", "raza": "Belier", "descripcion": "Conill curiós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Petit", "edat": "2-5", "tipus": "Conill", "imatge": "conill7" }
 { "index" : { "_index" : "bdanimals", "_id" : "36" } }
-{ "name": "Arlett", "raza": "Papallona", "descripcion": "Conill juganer", "color": "Ros", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Conill" }
+{ "name": "Arlett", "raza": "Papallona", "descripcion": "Conill juganer", "color": "Ros", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "0-2", "tipus": "Conill", "imatge": "conill8" }
