@@ -17,15 +17,15 @@
 { "index" : { "_index" : "bdanimals", "_id" : "9" } }
 { "name": "Bella", "raza": "Pug", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "0-2", "tipus": "Gos", "imatge": "gos9" }
 { "index" : { "_index" : "bdanimals", "_id" : "10" } }
-{ "name": "Charlie", "raza": "Beagle", "descripcion": "Gos curios", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Llarg", "tamany": "Mitja", "edat": "+8", "tipus": "Gos", "imatge": "gos10" }
+{ "name": "Charlie", "raza": "Beagle", "descripcion": "Gos curios", "color": "Ros", "patologias": "Ceguera", "pelaje": "Llarg", "tamany": "Mitja", "edat": "+8", "tipus": "Gos", "imatge": "gos10" }
 { "index" : { "_index" : "bdanimals", "_id" : "11" } }
 { "name": "Mina", "raza": "Siberia", "descripcion": "Gat trist", "color": "Negre", "patologias": "Artritis", "pelaje":"Curt", "tamany": "Mitjà", "edat": "2-5", "tipus": "Gat", "imatge": "gat1" }
 { "index" : { "_index" : "bdanimals", "_id" : "12" } }
-{ "name": "Branca", "raza": "Somali", "descripcion": "Gat tranquil", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Gran", "edat": "5-8", "tipus": "Gat", "imatge": "gat2" }
+{ "name": "Branca", "raza": "Somali", "descripcion": "Gat tranquil", "color": "Vermell", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Gran", "edat": "5-8", "tipus": "Gat", "imatge": "gat2" }
 { "index" : { "_index" : "bdanimals", "_id" : "13" } }
-{ "name": "Griseta", "raza": "Esfinx", "descripcion": "Gat juganer", "color": "Gris", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "0-2", "tipus": "Gat", "imatge": "gat3" }
+{ "name": "Griseta", "raza": "Esfinx", "descripcion": "Gat juganer", "color": "Ros", "patologias": "Cap", "pelaje": "Sense", "tamany": "Petit", "edat": "0-2", "tipus": "Gat", "imatge": "gat3" }
 { "index" : { "_index" : "bdanimals", "_id" : "14" } }
-{ "name": "Neula", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat", "imatge": "gat4" }
+{ "name": "Neula", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat", "imatge": "gat4" }
 { "index" : { "_index" : "bdanimals", "_id" : "15" } }
 { "name": "Michi", "raza": "Persa", "descripcion": "Gat afectuós", "color": "Ros", "patologias": "Artritis", "pelaje": "Curt", "tamany": "Gran", "edat": "2-5", "tipus": "Gat", "imatge": "gat5" }
 { "index" : { "_index" : "bdanimals", "_id" : "16" } }
@@ -33,7 +33,7 @@
 { "index" : { "_index" : "bdanimals", "_id" : "17" } }
 { "name": "Neu", "raza": "Siberia", "descripcion": "Gat relaxat", "color": "Blanc", "patologias": "Diabetis", "pelaje": "Curt", "tamany": "Mitjà", "edat": "5-8", "tipus": "Gat", "imatge": "gat7" }
 { "index" : { "_index" : "bdanimals", "_id" : "18" } }
-{ "name": "Tarantin", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Vermell", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat", "imatge": "gat8" }
+{ "name": "Tarantin", "raza": "Himalai", "descripcion": "Gat curiós", "color": "Gris", "patologias": "Ceguera", "pelaje": "Curt", "tamany": "Mitjà", "edat": "+8", "tipus": "Gat", "imatge": "gat8" }
 { "index" : { "_index" : "bdanimals", "_id" : "19" } }
 { "name": "Llorinet", "raza": "Gorrio", "descripcion": "Ocell curiós", "color": "Gris", "patologias": "Artitris", "pelaje": "Curt", "tamany": "Mitja", "edat": "0-2", "tipus": "Ocell", "imatge": "ocell1" }
 { "index" : { "_index" : "bdanimals", "_id" : "20" } }
