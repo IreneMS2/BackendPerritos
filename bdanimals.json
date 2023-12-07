@@ -7,7 +7,7 @@
 { "index" : { "_index" : "bdanimals", "_id" : "4" } }
 { "name": "Daisy", "raza": "Golden", "descripcion": "Gosa carinyosa", "color": "Blanc", "patologias": "Diabetes", "pelaje": "Llarg", "tamany": "Mitja", "edat": "0-2", "tipus": "Gos", "imatge": "gos4" }
 { "index" : { "_index" : "bdanimals", "_id" : "5" } }
-{ "name": "Rocky", "raza": "Pug", "descripcion": "Gos trapella", "color": "Vermell", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Gos", "imatge": "gos5" }
+{ "name": "Rocky", "raza": "Pug", "descripcion": "Gos trapella", "color": "Ros", "patologias": "Cap", "pelaje": "Curt", "tamany": "Petit", "edat": "5-8", "tipus": "Gos", "imatge": "gos5" }
 { "index" : { "_index" : "bdanimals", "_id" : "6" } }
 { "name": "Buddy", "raza": "Beagle", "descripcion": "Gisa juganer", "color": "Gris", "patologias": "Artritis", "pelaje": "Mitja", "tamany": "Gran", "edat": "2-5", "tipus": "Gos", "imatge": "gos6" }
 { "index" : { "_index" : "bdanimals", "_id" : "7" } }
