@@ -35,7 +35,6 @@ app.use(cors({
   optionsSuccessStatus: 204,
 }));
 
-
 // Permitir solicitudes POST en la ruta /api/check
 app.post('/api/check', async (req, res) => {
   try {
@@ -74,12 +73,12 @@ app.get('/api/search', async (req, res) => {
         }
 
         const body = await client.search({
-            index: ['fruits', 'animals'],
-            q: `name:${query} OR price:${parseFloat(query)} OR raza:${query} OR pelaje:${query} OR patologias:${query} OR descripcion:${query} OR color:${query}`,
+            index: ['fruits', 'bdanimals'],
+            q: `name:${query} OR raza:${query} OR pelaje:${query} OR patologias:${query} OR descripcion:${query} OR color:${query}`,
         });
 
         console.log('Elasticsearch Query:', {
-            index: ['fruits', 'animals'],
+            index: ['fruits', 'bdanimals'],
             body: {
                 query: {
                     match: {
@@ -102,7 +101,7 @@ app.get('/api/search', async (req, res) => {
                         price: hit._source.price,
                     };
                 }
-                if (hit._index === 'animals') {
+                if (hit._index === 'bdanimals') {
                     extractedFields = {
                         name: hit._source.name,
                         raza: hit._source.raza,
@@ -110,6 +109,8 @@ app.get('/api/search', async (req, res) => {
                         color: hit._source.color,
                         patologias: hit._source.patologias,
                         pelaje: hit._source.pelaje,
+                        tamany: hit._source.tamany,
+                        edat: hit._source.edat,
                     };
                 }
 
@@ -126,6 +127,97 @@ app.get('/api/search', async (req, res) => {
     } catch (error) {
         console.error('Elasticsearch query error:', error);
         res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+app.get('/api/searchButton', async (req, res) => {
+    const query = req.query.query; // Extract the 'query' parameter directly
+
+    const decodedQuery = decodeURIComponent(query);
+    const matrix = decodedQuery.split('|').map(row => row.split(',').filter(element => element !== ''));
+
+    try {
+        if (!matrix) {
+              res.status(400).send('Consulta no válida');
+              return;
+        }
+
+        console.log(matrix);
+
+        // Supongamos que 'matrix' es un array con los valores para cada campo en el orden: [tipus, raza, color, patologias, pelaje, tamany, edat]
+        const fields = ['tipus', 'raza', 'color', 'patologias', 'pelaje', 'tamany', 'edat'];
+
+        // Construye el objeto de consulta
+        const queryBody = {
+          index: ['fruits', 'bdanimals'],
+          body: {
+            query: {
+              bool: {
+                must: []  // Cambiamos 'should' por 'must'
+              }
+            }
+          }
+        };
+
+        // Itera sobre la matriz y agrega condiciones solo para los campos con valores diferentes de ''
+        for (let i = 0; i < matrix.length; i++) {
+          if (matrix[i].length > 0) {
+            if (matrix[i].length === 1) {
+              // Si es un solo elemento, agregamos una sola condición dentro de 'must'
+              queryBody.body.query.bool.must.push({
+                match: {
+                  [fields[i]]: matrix[i][0]
+                }
+              });
+            } else {
+              // Si es un array, agregamos múltiples condiciones dentro de 'must'
+              const shouldConditions = matrix[i].map(element => ({
+                match: {
+                  [fields[i]]: element
+                }
+              }));
+              queryBody.body.query.bool.must.push({ bool: { should: shouldConditions } });
+            }
+          }
+        }
+
+        console.log('Consulta de Elasticsearch:', JSON.stringify(queryBody, null, 2));
+
+        // Realiza la búsqueda en Elasticsearch
+        const result = await client.search(queryBody);
+
+        // Procesa los resultados
+        if (result && result.hits) {
+            // Extracta campos relevantes de la respuesta de Elasticsearch
+            const results = result.hits.hits.map(hit => {
+                let extractedFields = {};
+
+                if (hit._index === 'bdanimals') {
+                    extractedFields = {
+                        name: hit._source.name,
+                        raza: hit._source.raza,
+                        descripcion: hit._source.descripcion,
+                        color: hit._source.color,
+                        patologias: hit._source.patologias,
+                        pelaje: hit._source.pelaje,
+                        tamany: hit._source.tamany,
+                        edat: hit._source.edat,
+                    };
+                }
+
+                return extractedFields;
+            });
+
+            // Filtra y elimina los resultados vacíos
+            const filteredResults = results.filter(result => Object.keys(result).length !== 0);
+
+            res.json(filteredResults); // Devuelve los resultados filtrados
+        } else {
+            res.status(404).json({ error: 'No results found' });
+        }
+    } catch (error) {
+        console.error(error, JSON.stringify(error, null, 2));
+        res.status(500).send('Error en la búsqueda');
     }
 });
 
