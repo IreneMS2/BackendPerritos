@@ -186,7 +186,6 @@ app.get('/api/searchButton', async (req, res) => {
         // Realiza la búsqueda en Elasticsearch
         const result = await client.search(queryBody);
 
-
         if (result && result.hits) {
             // Extracta campos relevantes de la respuesta de Elasticsearch
             const results = result.hits.hits.map(hit => {
