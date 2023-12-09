@@ -110,6 +110,7 @@ app.get('/api/search', async (req, res) => {
                         tamany: hit._source.tamany,
                         edat: hit._source.edat,
                         tipus: hit._source.tipus,
+                        foto: hit._source.imatge,
                     };
                 }
 
@@ -148,6 +149,7 @@ app.get('/api/searchButton', async (req, res) => {
         // Construye el objeto de consulta
         const queryBody = {
           index: ['fruits', 'bdanimals'],
+          size: 40,
           body: {
             query: {
               bool: {
@@ -201,6 +203,7 @@ app.get('/api/searchButton', async (req, res) => {
                         tamany: hit._source.tamany,
                         edat: hit._source.edat,
                         tipus: hit._source.tipus,
+                        foto: hit._source.imatge,
                     };
                 }
 
